@@ -13,6 +13,6 @@ class Post(models.Model):
         # ordering by pub_date
         ordering = ('-pub_date',)
     
-    def __unicode__(self):
+    def __str__(self):
         # show title 
         return self.title
