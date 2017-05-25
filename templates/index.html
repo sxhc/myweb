@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <title>
+            Welcome to my Blog!
+        </title>
+    </head>
+    <body>
+        <h1>Welcome to my Blog!</h1>
+        <hr>
+        {% for post in posts %}
+            <p style="font-family:Microsoft YaHei; font-size:16pt; font-weight:blod;">
+                <a href="/post/{{post.webadd}}">{{post.title}}</a>
+            </p>
+        {% endfor %}
+        <hr>
+        <h3>
+            Current Time: {{now}}
+        </h3>
+    </body>
+</html>
