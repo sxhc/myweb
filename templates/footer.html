@@ -1,0 +1,8 @@
+<!-- footer.html -->
+{% block footer %}
+    {% if now %}
+        <p style="font-family:Microsoft YaHei;">Current Time:{{ now }}</p>
+    {% else %}
+        <p style="font-family:Microsoft YaHei;">Have a good day!</p>
+    {% endif %}
+{% endblock %}
